@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jurassic Japan</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Jurassic Japan.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358321/Ayaan_Ahmed_7__Jurassic_Japan_ixjv53.webp" alt="Photograph of a selfie of me with the Jurassic Park gate behind me at Universal Studios.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/79</td>
+            <td>f/2.2</td>
+            <td>Osaka, Japan</td>
+            <td>22-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            This is the only selfie in this archive, and the reason behind it is that I visited Universal Studios Japan in one of the very last days of my trip, where I was quite tired of always pulling out my camera to film or photograph something, so I instead chose to leave my camera back in Kyoto while I took a bullet train to Osaka for the day to visit the park.<br><br>Jurassic Park is one of my most favorite franchises, through a cinema re-release, I watched the original 1993 film in cinemas when I was a kid, and I mean, it's dinosaurs, what's not to love. This wasn't my first time seeing the Jurassic Park sign, I saw quite an identical one in Universal Studios Singapore which I visited with my family 8 years ago now.<br><br>Besides giving me the excuse of an alliterated title, the Jurassic Park area had my most favorite ride in Universal Japan, The flying dinosaur, a hanging rail rollercoaster which felt to me like the tallest coaster I'd ever been on. I remember feeling like this was my most favorite rollercoaster on Earth, and that was saying something considering the first rollercoaster ride of my life was on the Formula Rossa, the fastest rollercoaster on the planet.</p>
+    </div>
+</div>
+
+</body>
+</html>

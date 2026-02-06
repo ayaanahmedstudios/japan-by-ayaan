@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400&display=swap'); /* I was facing some error with the @font-face for Atkinson Hyperlegible font, so I connected it to it's Google Fonts URL. */
+
+        
+            @font-face { /* These two @font-faces were added to find and connect the fonts on the page to fonts I kept in a folder of the site, so Prof Marcus doesn't need to download them. */
+                font-family: "Departure Mono";
+                src: url("fonts/DepartureMono-Regular.otf") format("opentype");
+            }
+
+            @font-face {
+                font-family: "Tiny5";
+                src: url("fonts/Tiny5-Regular.ttf") format("truetype");
+            }
+            
+            body { 
+                background-color: #1a1a1a;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-family: Tiny5;
+                font-size: 100px;
+                letter-spacing: -0.031em;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            p {
+                color: #ffffff;
+                font-family: Atkinson Hyperlegible;
+                text-align: center;
+                font-size: small;
+            }
+
+            .japan-map {
+                position: relative;
+                width: 845px;
+                height: 845px;
+                margin: 50px auto;
+                display: flex;
+            }
+            /* Map dots design */
+            .map-dot {
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                background: #ff0000;
+                border-radius: 50%; /* Makes square shapes circle */
+                border: 1px solid #ffffff;
+                cursor: pointer; /* Turns mouse cursor to pointer when hovering over dots */
+                transition: transform 0.2s ease-in-out; /* Duration of dot size animation */
+                z-index: 10;
+            }
+
+            .map-dot:hover {
+                transform: scale(1.8); /* Dots increase in size when mouse hovers on them */
+            }
+
+            /* Plotted Dots (I used Google Maps and manually aligned each dot to the location where I took the photograph) */
+            .dot-1 { top: 420px; left: 503px; }
+            .dot-2 { top: 432px; left: 522px; z-index: 10000; } /* Z Index suggestion from Prof Marcus, brings dot and it's popup in front */
+            .dot-3 { top: 407px; left: 537px; }
+            .dot-4 { top: 417px; left: 536px; }
+            .dot-5 { top: 405px; left: 527px; }
+            .dot-6 { top: 415px; left: 527px; }
+            .dot-7 { top: 453px; left: 402px; }
+            .dot-8 { top: 451px; left: 415px; }
+            .dot-9 { top: 441px; left: 415px; }
+            .dot-10 { top: 443px; left: 405px; }
+
+            .footer {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                position: relative;
+            }
+            .footer a {
+                color: #ffffff;
+                text-decoration: none;
+                font-family: Atkinson Hyperlegible;
+                font-size: 14px;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: color 0.3s;
+                position: relative;
+            }
+            .footer a:hover {
+                color: #585858;
+            }
+
+            .contact-button {
+                position: relative;
+            }
+
+            .map-dot[label]:hover::after {
+                content: attr(label);
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #333;
+                color: #ffffff;
+                padding: 5px;
+                border-radius: 1px;
+                font-size: 12px;
+                font-family: Departure Mono;
+                white-space: nowrap;
+                z-index: 20;
+                margin-bottom: 12px;
+            }
+
+            .contact-button {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .contact-tooltip {
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%) translateY(10px);
+                background: #333;
+                color: #ffffff;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 12px;
+                font-family: Departure Mono;
+                white-space: nowrap;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+                pointer-events: none;
+                margin-bottom: 12px;
+            }
+
+            .contact-button:hover .contact-tooltip {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Glitch effect for the title
+                const textElement = document.querySelector(".glitch-title");
+                if (textElement) {
+                    const originalText = textElement.textContent;
+                    const glitchChars = "!@#$%^&*()-_=+[]{}|;:,.<>?/~";
+
+                    function glitchEffect() {
+                        let newText = originalText.split("").map(char => {
+                            return Math.random() < 0.2
+                                ? glitchChars[Math.floor(Math.random() * glitchChars.length)]
+                                : char;
+                        }).join("");
+                        textElement.textContent = newText;
+                        setTimeout(() => {
+                            textElement.textContent = originalText;
+                        }, 200);
+                    }
+                    setInterval(glitchEffect, 1500);
+                }
+
+                const contactButton = document.querySelector(".contact-button");
+                const tooltip = contactButton.querySelector(".contact-tooltip");
+
+                contactButton.addEventListener("click", function () {
+                    navigator.clipboard.writeText("ayaanahmed@ocadu.ca"); // Copies email to clipboard
+
+                    // Change popup text to "Copied!"
+                    tooltip.textContent = "Copied!";
+
+                    // Revert to original text after 2 seconds
+                    setTimeout(() => {
+                        tooltip.textContent = "Email me at ayaanahmed@ocadu.ca";
+                    }, 2000);
+                });
+            });
+        </script>
+
+        <h1 class="glitch-title">Japan by Ayaan</h1>
+
+        <p style="letter-spacing: 3px;">CLICK THE DOTS TO SEE HOW I PHOTOGRAPHED THAT PLACE.</p>
+
+        <div class="japan-map">
+            <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770357369/jp_mqr0wb.svg" alt="Japan Map">
+            
+            <a href="finding-fuji.html" class="map-dot dot-1" label="Finding Fuji"></a>
+            <a href="anime-island.html" class="map-dot dot-2" label="Anime Island"></a>
+            <a href="treetop-views.html" class="map-dot dot-3" label="Treetop Views"></a>
+            <a href="toon-town-tokyo.html" class="map-dot dot-4" label="Toon Town, Tokyo"></a>
+            <a href="the-hood.html" class="map-dot dot-5" label="The Hood"></a>
+            <a href="dundas-square.html" class="map-dot dot-6" label="Dundas Square"></a>
+            <a href="jurassic-japan.html" class="map-dot dot-7" label="Jurassic Japan"></a>
+            <a href="climbed-halfway.html" class="map-dot dot-8" label="Climbed Halfway"></a>
+            <a href="kiyomizu-triple-dilemma.html" class="map-dot dot-9" label="Kiyomizu Triple Dilemma"></a>
+            <a href="cinematic-stream.html" class="map-dot dot-10" label="Cinematic Stream"></a>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="about.html" style="letter-spacing: 3px;">ABOUT</a>
+                <a class="contact-button" style="letter-spacing: 3px;">CONTACT
+                    <span class="contact-tooltip" style="letter-spacing: 0;">Email me at ayaanahmed@ocadu.ca</span> </a>
+            </p>
+        </div>
+    </body>
+</html>

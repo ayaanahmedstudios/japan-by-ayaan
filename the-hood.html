@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Hood</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">The Hood.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358322/Ayaan_Ahmed_5_The_Hood_yfszav.webp" alt="Photograph of a street in Shinjuku, Tokyo.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/100</td>
+            <td>f/6.3</td>
+            <td>Shinjuku, Japan</td>
+            <td>15-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            For my entire trip in Tokyo, for some reason I planned to stay in Shinjuku for no particular reason I can recall, and something which I learned later on, was that Shinjuku isn't any ordinary neighborhood within Tokyo, it's quite famous for being one of the main areas where the Yakuza Japanese mafia hang out, hence “The Hood”. Despite all the bottom-page Reddit comments with crazy stories in Shinjuku, Tokyo as a whole is one of the safest cities a person can be, I never felt unsafe, only ever confused.<br><br>Living in Shinjuku for an entire week basically meant constantly transiting through the Shinjuku Japan Rail station, which is THE most busiest train station on planet earth, that's an actual fact. I never entered or exited the station from the same door, I simply never found it again, and the single station ran rail trains, smaller commuter trains, bullet trains, other national trains, trains to the airport, subways, and an internal bus station. It's a glorious feat of transit, but overwhelming, this photograph was taken just down the street from the station, and behind me is the famous building in Shinjuku which had the giant Godzilla head poking out.<br><br>I really liked taking this picture because it captures a very ordinary street, but it's exactly the kind of Japan I expected, and here's one of the only pictures I felt capture it. It isn't always easy to photograph things on the streets of Tokyo, the sidewalks are always thin and hard to stop in, and it just feels strange to photograph random people, I found this problem lesser so in Kyoto. I also witnessed first hand what I assumed to be a stereotype about Japan, waiting at a crosswalk in and in my hotel room in Shinjuku I felt two earthquakes in a single week during my trip, they really do happen that often.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

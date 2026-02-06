@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Treetop Views</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono"; 
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";  
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Treetop Views.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358323/Ayaan_Ahmed_3_Treetop_Views_ujsif4.webp" alt="Photograph of the aerial view of Tokyo from the Tokyo Skytree.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/100</td>
+            <td>f/5</td>
+            <td>Sumida, Japan</td>
+            <td>16-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            The tallest building in Japan is also called the Tokyo Skytree, and I just happened to find my way there at the most optimal time, I was running late from being at the Shibuya Skydeck, and somehow reached an hour past my ticket booking, which led to me to enter exactly at sunset.<br><br>There was a flock of photographers pushing against each other at the side of the tower facing Mount Fuji and also coincidentally also facing the sunset. I just barely managed to grab a few photographs of that, and instead, photographed this view, on the other side, of purely the metropolitan city Tokyo really is, a river running through it, sunset in the sky, and an oddly shaped building in the middle-right, which I later researched to find was the Edo-Tokyo museum and loosely based on traditional concepts of Japanese architecture.<br><br>The one thing I remember from this day, was thinking about how much a low aperture-zoom lens combo would’ve helped from this view, but those are some of the most expensive lenses. The base of the tower is quite complex, entangled with multiple shopping centres, parks and train stations, which ended up leading me alone on an empty platform, the only time I had a problem with public transit in Tokyo.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

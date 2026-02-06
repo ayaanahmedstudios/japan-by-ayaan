@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiyomizu Triple Dilemma</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Kiyomizu Dilemma.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358322/Ayaan_Ahmed_9_Kiyomizu_Triple_Dilemma_cs8zmf.webp" alt="Photograph of Kiyomizu Dera temple from connected balcony.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/60</td>
+            <td>f/4</td>
+            <td>Kyoto, Japan</td>
+            <td>21-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            I learned about the Kiyomizu Dera temple years ago from a video I YouTube made about the place, it has quite a morbid history, which the very side of the temple in this photo being one from which people jumped to their deaths in return from what they believed would be a wish. I didn't visit any Japanese heritage sites like this in Tokyo, so it felt fitting going to them in Kyoto, which was simply the old capital and more cultural.<br><br>I don't know if it's for fact but in the Oppenheimer movie I remember a line saying that they wouldn't bomb Kyoto because of it's cultural heritage, makes you wonder how a small difference in that decision could've changed what I saw there that day. The photograph was easy enough to take since the temple is quite open with these large balconies, but as you can tell from the other balcony in the foreground, it was quite grounded, another tourist-filled location in Kyoto.<br><br>Now you may be as curious about the title as I am to explain it, beneath the temple is a flowing fountain which splits into three streams, it's believed that drinking from one of the three can offer you either 1: A long life, 2: Love, or 3: Wisdom, that was the dilemma, of waiting in line and choosing one of the fountains to drink from, in wonderful fashion, I decided...to walk past the entire line of people and their 3 wish fountains, it was like my third last day in Japan, I wasn't going to wait an hour waiting in line to drink wisdom water.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

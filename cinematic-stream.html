@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cinematic Stream</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Cinematic Stream.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358324/Ayaan_Ahmed_10__Cinematic_Stream_gdoi2d.webp" alt="Photograph of the view from a bridge of the Katsura river flowing through Kyoto.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/5236</td>
+            <td>f/1.8</td>
+            <td>Kyoto, Japan</td>
+            <td>25-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            I sometimes feel like it may be the nostalgiac quality of marking the end of my trip, but walking around alone by the Katsura river that ran through Kyoto was one of my most favorite parts of Japan.<br><br>On my last day in Japan, I woke up early, and with a precise bullet train booking in place, didn't feel like treading too far from my hotel to a place I couldn't guarantee a quick return from, and so after a 20 minute from my hotel, I reached the Katsura river. Naturally it was beautiful, it had small streams branching out from it with small orange trees bearing fruit, and storks and ducks waddled around in the water, it was all so cinematic, yet so unbelievably empty.<br><br>I didn't take my camera out at all on my last day in Japan, and instead took in the last experiences I could have, and if you think this river wasn't as cinematic so far, on my way back, I passed by a girl, standing in the middle of the river, playing a violin to a stork sitting in front of her, like when I think about it now, how on Earth didn't I film that, you just had to be there to see it.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

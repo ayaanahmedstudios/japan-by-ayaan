@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url("fonts/DepartureMono-Regular.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url("fonts/Tiny5-Regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "Atkinson Hyperlegible";
+            src: url("fonts/Atkinson-Hyperlegible-Regular.ttf") format("truetype");
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .tables {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            border: 2px solid white;
+        }
+
+        td {
+            padding: 15px;
+            text-align: left;
+            font-size: larger;
+            font-weight: bold;
+            border-top: 2px solid white;
+        }
+
+        /* Combined style for both About and Citations titles */
+        .title-cell {
+            background-color: #2e2e2e; /* Background color for both titles */
+            color: white;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-family: Tiny5;
+            letter-spacing: -0.031em;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 40px;
+            transition: color 0.3s ease; /* color transition duration */
+        }
+
+        .title-link {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .title-link:hover {
+            color: #5d5d5d; /* Changes color on hover */
+            cursor: pointer; /* Changes cursor to pointer */
+        }
+
+        p {
+            font-size: medium;
+        }
+
+        .description, .citations {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .citations a {
+            color: #FFD700; /* Yellow link color */
+            text-decoration: none; /* No underline by default */
+        }
+
+        .citations a:hover {
+            color: #FFC107; /* Lighter yellow on hover */
+            text-decoration: underline; /* Underline effect on hover */
+        }
+
+        .citations p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="tables">
+
+    <a href="index.html" class="title-link">
+        <h1>Japan by Ayaan</h1>
+    </a>
+
+    <table>
+        <tr>
+            <td class="title-cell">About</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="description">
+                    <p>
+                        This project is an archived map of various photographs I took across Japan and the stories behind them, this project was done for my Graphic Design 2 assignment Resource Web and undertaken in Feb-Mar 2025.
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="title-cell">Citations</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="citations">
+                    <p>Japan Map SVG</p>
+                    <p><a href="https://simplemaps.com/svg/country/jp" target="_blank">https://simplemaps.com/svg/country/jp</a>, Accessed 13 Feb. 2025.</p><br>
+
+                    <p>Departure Mono Font + Inspiration for Glitch Title</p>
+                    <p><a href="https://departuremono.com/" target="_blank">https://departuremono.com/</a>, Accessed 20 Feb. 2025.</p><br>
+
+                    <p>Tiny5 Font</p>
+                    <p><a href="https://fonts.google.com/specimen/Tiny5" target="_blank">https://fonts.google.com/specimen/Tiny5</a>, Accessed 10 Feb. 2025.</p><br>
+
+                    <p>Atkinson Hyperlegible Font - Designed for Visual Accessibility</p>
+                    <p><a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible" target="_blank">https://fonts.google.com/specimen/Atkinson+Hyperlegible</a>, Accessed 10 Dec. 2025.</p><br>
+
+                    <p>W3Schools – Reference for multiple CSS code.</p>
+                    <p><a href="https://www.w3schools.comk" target="_blank">https://www.w3schools.com</a>, Accessed 10 Feb. 2025.</p><br>
+
+                    <p>Stack Overflow – Reference for "Copied" Javascript</p>
+                    <p><a href="https://stackoverflow.com/questions/37381640/tooltips-highlight-animation-with-clipboard-js-click" target="_blank">https://stackoverflow.com/questions/37381640/tooltips-highlight-animation-with-clipboard-js-click</a>, Accessed 6 Mar. 2025.</p><br>
+
+                    <p>Stack Overflow – Reference for "Glitch Title" Javascript</p>
+                    <p><a href="https://stackoverflow.com/questions/78282373/need-help-to-create-animation-to-randomly-change-text-characters-in-js" target="_blank">https://stackoverflow.com/questions/78282373/need-help-to-create-animation-to-randomly-change-text-characters-in-js</a>, Accessed 6 Mar. 2025.</p><br>
+
+                    <p>LEMMiNO Projects – Inspiration for Photograph Metadata Grid</p>
+                    <p><a href="https://www.lemmi.no/p/the-unbreakable-kryptos-code" target="_blank">https://www.lemmi.no/p/the-unbreakable-kryptos-code</a>, Accessed 11 Mar. 2025.</p><br>
+
+                    <p>Google Maps – Reference for Plotting Dot Buttons on Map</p>
+                    <p><a href="https://www.google.com/maps" target="_blank">https://www.google.com/maps</a>, Accessed 15 Feb. 2025.</p><br>
+
+                    <p>Finding Fuji – Documentary</p>
+                    <p><a href="https://youtu.be/cM2zo1QS1yc?si=YQZKLSrF8V2LYtuB" target="_blank">https://youtu.be/cM2zo1QS1yc?si=YQZKLSrF8V2LYtuB</a>, Accessed 11 Mar. 2025.</p>
+
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

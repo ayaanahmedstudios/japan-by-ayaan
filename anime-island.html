@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Island</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5"; 
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Anime Island.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358321/Ayaan_Ahmed_2_Anime_Island_felg7l.webp" alt="Photograph of Enoshima Island from a beach off the coast of Japan.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/400</td>
+            <td>f/5.6</td>
+            <td>Enoshima, Japan</td>
+            <td>18-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            Uncovering this place came about purely out of my hobby of watching anime. One of my favorites was heavily based in Enoshima, the train stations, schools, and the beaches near Enoshima Island, which is what I photographed. I had an existing appreciation for the area, but grew to learn and experience the place even more.<br><br>Visiting in the winter led the beach to be practically empty and some of the strongest gusts of winds ever to befall me probably being the reason why, this was no ordinary coastline, but the Sagami Bay connecting directly to the Pacific Ocean, there was no land at the end of this horizon till North America. A certain view nobody ever mentions is the clear view of Mount Fuji from the bridge leading up to the island, it's so amazing seeing a single mountain from so many different angles across a country, it's like when you spot the CN Tower on a horizon well past Missisauga.<br><br> I remember photographing this shot or any shots I took on this beach to be incredibly difficult, I brought my tripod that day for filming, and to secure it from flying away I had to latch it down with my backpack. After a few hours of being there, I witnessed one of the best sunsets of my life. Japan is the land of the rising sun, and this was the first sunset of the world that day.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dundas Square</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Dundas Square.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358322/Ayaan_Ahmed_6_Dundas_Square_bh9wao.webp" alt="Photograph of an aerial view of Shibuya Crossing from Shibuya Skydeck.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/80</td>
+            <td>f/6.3</td>
+            <td>Shibuya, Japan</td>
+            <td>16-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            Ah yes, Yonge and Dundas sqau- oh I mean, Shibuya crossing. This is obviously a lot bigger than that tiny diagonal crossing in front of the Eaton Centre, and one of the most famous crosswalks in the world, and one of my best photographs too I think. My sister once mentioned that the stone barrier in the foreground of the shot makes it look like I’m standing on top of a roof, while I was actually in a closed hallway filled with metallic balloons. It was as strange as it sounds.<br><br>This view is visible from a number of places in the Shibuya Skydeck where I was, but a glaring issue was, well, the glare. The glass barriers they had in place made almost every angle with an open roof leading to these harsh reflections and glare that ruined most shots, so I later on managed to take it from quite an awkward angle really sticking myself to a corner of a wall. I think it was worth it however, and quite well timed since I have a photo from the same angle with the traffic lights on and no people, and then this with the people flowing through.<br><br>I would say the Shibuya Skydeck is one of the most aesthetic places you can be, I mean an entire floor in that building was just filled with metallic balloons, to this day 3 years after my trip, a picture I took of myself in the mirrors of that hallway are my profile picture on every social media I have.</p>
+    </div>
+</div>
+
+</body>
+</html>

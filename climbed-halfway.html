@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climbed Halfway</title> 
+    <style>
+        @font-face {
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body { 
+            background-color: #1a1a1a;
+            color: white;
+            font-family: "Departure Mono", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow: auto;
+        }
+
+        .photograph-box {
+            width: 100%;
+            max-width: 700px;
+            background-color: #1a1a1a;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif;
+            padding: 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .title-row a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f;
+        }
+
+        .image-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background-color: #333;
+            border-bottom: 2px solid white;
+        }
+
+        .image-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .metadata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .metadata-table td {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            border-right: 2px solid white;
+        }
+
+        .metadata-table td:last-child {
+            border-right: none;
+        }
+
+        .description {
+            padding: 14px;
+            border-top: 2px solid white;
+            line-height: 150%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="photograph-box">
+    <div class="title-row" style="font-family: 'Tiny5', sans-serif;">
+        <a href="index.html">Climbed Halfway.</a>
+    </div> 
+
+    <div class="image-section">
+        <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358324/Ayaan_Ahmed_8__Climbed_Halfway_l0m2f9.webp" alt="Photograph of a series of Orange Torii gates making up the 1000 Torii Gates in Kyoto.">
+    </div>
+
+    <table class="metadata-table">
+        <tr>
+            <td>1/160</td>
+            <td>f/3.5</td>
+            <td>Kyoto, Japan</td>
+            <td>23-12-2022</td>
+        </tr>
+    </table>
+
+    <div class="description">
+        <p>
+            The Fushimi Inari-taisha in Kyoto consists of 1000 Torii gates spread out across climbing 2 hours up a mountain to complete, I however, didn't record how high I went so I don't even know if I actually did climb it halfway.<br><br>The thing about the Torii gates site, is that despite the city of Kyoto being so much more peaceful to me, this was one fo the places which was crawling with tourists, and the only way to escape them, was to keep climbing, the higher you climbed, the less people you saw, but that never stopped leaving me with practically no photoraphs directly of the gates with no people in it, hence this odd upwards angle.<br><br>The site was a lot more interesting than I would've expected from a string of orange gates in the middle of a forest, every now and then you'd pass by a small shrine with little flames burning, and what I didn't expect were the warning signs higher up for wild monkeys in the area, I almost wanted to find them but never did end up seeing any. I entered the gates from one side and exited through another, I remember just getting to the entrance of the gates being a mystery to me now, whatever the case, it's a tick off my bucket list, and gives me an excuse to use this text symbol because it's well within context: ⛩
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

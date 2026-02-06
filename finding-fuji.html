@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finding Fuji</title> 
+    <style>
+        @font-face { /* These two @font-faces were added to find and connect the fonts on the page to fonts I kept in a folder of the site, so Prof Marcus doesn't need to download them. */
+            font-family: "Departure Mono";
+            src: url('./fonts/DepartureMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Tiny5";
+            src: url('./fonts/Tiny5-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body { 
+            background-color: #1a1a1a; /* Description background colour */
+            color: white; /* Description text colour */
+            font-family: "Departure Mono", monospace; /* Description font */
+            display: flex; /* Aligns elements in the centre together (Table becomes left aligned when this is removed) */
+            justify-content: center; /* Flexbox grouped to be vertically centre */
+            align-items: flex-start; /* Flexbox elements alignment (I'm not sure what this changes) */
+            padding: 40px 20px; /* 1st is Top/Bottom padding, 2nd is Left/Right padding */
+            overflow: auto; /* Makes scrollbars appear if content overflows */
+        }
+
+        .photograph-box {
+            width: 100%; /* % Width of full table panels */
+            max-width: 700px; /* Restricts table panel to 700px (helps with the 16:9 orientation) */
+            background-color: #1a1a1a; /* Background colour */
+            border: 2px solid white;  /* Borders around full table (important for grid panels aesthetic) */
+            display: flex;  /* Aligns elements in centre */
+            flex-direction: column;  /* Maintains any items go vertically top to bottom */
+            margin-bottom: 50px; /* Maintains distance between table and the bottom of the webpage */
+        }
+
+        .title-row {
+            font-family: "Tiny5", sans-serif; /* Title font */
+            padding: 20px; /* Padding around title */
+            background-color: #1a1a1a; /* Background colour behind font */
+            text-align: center; /* Alignment of title */
+            font-size: 75px; /* size of title */
+            font-weight: bold; /* weight of title */
+            border-bottom: 2px solid white; /* Bottom line for aesthetic barrier between image and title */
+            cursor: pointer;  /* Mouse turns to pointer cursor to indicate it's a button to go back to home page */
+            transition: background-color 0.3s ease; /* Background colour changes when hovered upon over 0.3s */
+        }
+
+        .title-row a {
+            color: white;  /* Specific colour of text when it's a link too */
+            text-decoration: none; /* Prevents any extra decor on title when it's a link */
+            display: block; /* Keeps full width of container */
+        }
+
+        .title-row:hover {
+            background-color: #5f5f5f; /* Colour to change to when mouse hovers over title */
+        }
+
+        .image-section {
+            position: relative; /* Allows flexibility based on other variables */
+            width: 100%; /* Width of image panel */
+            padding-top: 56.25%; /* controls height of table panel (helps with 16:9 image orientation) */
+            background-color: #333; /* colour behind image */
+            border-bottom: 2px solid white; /* Helps with grid panel aesthetic line */
+        }
+
+        .image-section img {
+            position: absolute; /* Maintains solid position of image itself */
+            top: 0; /* Keeps image in place top/bottom, same as left just for left/right */
+            left: 0;
+            width: 100%; /* Maintain full image to be in panel, same as hright */
+            height: 100%;
+            object-fit: cover; /* This ensures that the image fits the image section no matter what by resizing it */
+        }
+
+        .metadata-table {
+            width: 100%;  /* Width of metadata panel */
+            border-collapse: collapse; /* This removes space between the table's borders to make it unified rather than one for each */
+        }
+
+        .metadata-table td {
+            padding: 10px; /* Padding around metadata texts */
+            text-align: center; /* Alignment of metadata texts */
+            background-color: #333; /* Background colour of metadata row (I made it different just to stand out) */
+            color: white; /* Text colour of metadata texts */
+            border-right: 2px solid white; /* Puts a line on the right of each field as the border */
+        }
+
+        .metadata-table td:last-child {
+            border-right: none; /* This was to prevent there being two border lines beside the metadata row, the line appears thicker there then */
+        }
+
+        .description {
+            padding: 14px; /* The padding around the description text */
+            border-top: 2px solid white; /* This is the border above the description text to seperate it from the metadata */
+            line-height: 150%; /* This slightly increased the line spacing of the description */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="photograph-box"> <div class="title-row" style="font-family: 'Tiny5', sans-serif;"> <a href="index.html">Finding Fuji.</a> </div> 
+
+    <div class="image-section"> <img src="https://res.cloudinary.com/bluetigerincstudios/image/upload/v1770358323/Ayaan_Ahmed_1_Finding_Fuji_nl61ij.webp" alt="Photograph of Mount Fuji behind a street of houses."> </div>
+
+    <table class="metadata-table"> <tr> <td>1/100</td> <td>f/16</td> <td>Fujikawaguchiko, Japan</td> <td>15-12-2022</td> </tr>
+    </table>
+
+    <div class="description"> <p> Mount Fuji, the 4th largest active volcano on Earth, and the highest peak in Japan. I travelled 2 hours from Tokyo to the lake town of Fujikawaguchiko, with the intention of photographing the picturesque views Google Images promised in the area, but surrounding mountains hid Fuji from most angles near the main town, and I couldn't figure out where to go since most tourists remained in the area near the lake with no view of Fuji.<br><br>Eventually, I found my way following a dirt path alone, with no people for kilometers, which led to me to my final view, I turned that find into a documentary for my high school media project, which is now known as Finding Fuji, which was later featured at my high school's Film Festival run by me, and later featured in the OCADU Booth at the Toronto Film Festival.<br><br>This photograph however, is of one of the instances I could see Fuji from within the town as well, I preferred showing this because it better emulates where I spent most of my time. My best view with a lake in the foreground and the colossal mountain in the background was the most cinematic, but this is how the residents would see everyday.
+        </p>
+    </div>
+</div> </body>
+</html>
