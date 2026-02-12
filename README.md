@@ -1,5 +1,7 @@
 # Japan by Ayaan
 
+https://ayaanahmedstudios.github.io/japan-by-ayaan/
+
 An interactive photographic archive mapping stories and visuals from a trip across Japan. This project was developed for the Graphic Design 2 "Resource Web" assignment (Feb-Mar 2025).
 
 ## About
